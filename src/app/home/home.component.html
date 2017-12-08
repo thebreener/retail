@@ -1,0 +1,9 @@
+<h1>Hi {{currentUser.firstName}}! <span *ngIf="currentUser.role=='admin'"><p>Du er {{currentUser.role}}</p></span></h1>
+<ul>
+  <li *ngFor="let user of users">
+    {{user.username}} ({{user.firstName}} {{user.lastName}} {{user.role}})
+<!--    - <a (click)="deleteUser(user.id)">Delete</a>-->
+  </li>
+</ul>
+
+
